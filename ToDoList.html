@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #todo-list {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 20%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+#tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+#tasks li.done {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+button[type="button"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+button.delete {
+  background-color: red;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+    <div id="todo-list">
+        <h1>To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button type="submit">Add</button>
+        </form>
+        <ul id="tasks"></ul>
+    </div>
+    <script src=TDL.js></script>
+</body>
+</html>
